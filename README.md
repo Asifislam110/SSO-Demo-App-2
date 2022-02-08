@@ -17,8 +17,8 @@ Read more about the SDK configurations [here](../../README.md#configuration).
 {
     "clientID": "<ADD_CLIENT_ID_HERE>",
     "serverOrigin": "https://api.asgardeo.io",
-    "signInRedirectURL": "https://localhost:5000/signin/redirect",
-    "signOutRedirectURL": "https://localhost:5000"
+    "signInRedirectURL": "https://localhost:5001/signin/redirect",
+    "signOutRedirectURL": "https://localhost:5001"
 }
 ```
 
@@ -27,7 +27,7 @@ Read more about the SDK configurations [here](../../README.md#configuration).
 ```bash
 npm install && npm start
 ```
-The app should open at [`https://localhost:5000`](https://localhost:5000)
+The app should open at [`https://localhost:5001`](https://localhost:5001)
 
 ## Available Scripts
 
