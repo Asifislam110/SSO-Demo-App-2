@@ -1,0 +1,45 @@
+<div class="content">
+
+    <div *ngIf="isAuthenticated; then signedIn else notSignedIn"></div>
+
+    <ng-template #notSignedIn>
+        <div class="home-image">
+            <img
+                src="/assets/oz_logo-4.png"
+                class="logo" style="background: rgba(28, 105, 174, 0.9)"
+            />
+        </div>
+        <h3>
+            DEMO APP-2 Single Sign On(SSO) to showcase authentication for a Single Page Application <br />
+            via the OpenID Connect Authorization
+             
+        </h3>
+        <button
+            class="btn primary"
+            (click)="handleLogin()"
+        >
+            Login
+        </button>
+    </ng-template>
+
+    <ng-template #signedIn>
+        <button
+            class="btn primary mt-4"
+            routerLink="/profile"
+        >
+            Profile
+        </button>
+        <a href="https://localhost:5000">
+            <input type="button" value="APP-1" class="btn primary mt-4" />
+         </a>
+        
+
+        <button
+            class="btn primary mt-4"
+            (click)="handleLogout()"
+        >
+            Logout
+        </button>
+    </ng-template>
+
+</div>

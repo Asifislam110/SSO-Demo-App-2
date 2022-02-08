@@ -1,0 +1,7 @@
+{
+    "clientID": "vxXgmaxGC3xSVb8xrSOZw9MwWAga",
+    "serverOrigin": "https://localhost:9443",
+    "signInRedirectURL": "https://localhost:5001/signin/redirect",
+    "signOutRedirectURL": "https://localhost:5001",
+    "scope": ["profile"]
+}

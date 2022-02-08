@@ -1,0 +1,31 @@
+<br />
+
+<div class="container">
+    <div *ngIf="isConfigured; then configured else notConfigured"></div>
+
+    <ng-template #notConfigured>
+        <div class="content">
+            <h2>You need to update the Client ID to proceed.</h2>
+            <p>Please open "src/config.json" file using an editor, and update the <code>clientID</code> value with the
+                registered application's client ID.</p>
+           
+        </div>
+    </ng-template>
+
+
+    <ng-template #configured>
+        <div class="header-title">
+            <h1>
+                DEMO APP-2 Single Sign On(SSO) <br />
+            </h1>
+        </div>
+
+        <router-outlet></router-outlet>
+
+    </ng-template>
+</div>
+
+<img
+    src="/assets/oz_logo-4.png" style="background: rgba(28, 105, 174, 0.9)"
+    class="footer-image"
+/>
